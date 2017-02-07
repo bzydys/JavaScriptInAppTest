@@ -1,0 +1,78 @@
+body{
+    background-color: #F2F2F2;
+}
+
+/*最外层*/
+#main{
+    text-align: center;
+    margin-top: 220px;
+}
+
+#main .panel{
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+}
+
+#main .panel .group{
+    margin-bottom: 15px;
+}
+
+#main .panel .group label{
+    display: block;
+    margin: 5px 0;
+    text-align: left;
+}
+
+#main .panel .group input{
+    width: 250px;
+    height: 33px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+#main .panel .group input:focus{
+    outline: none;
+    border: 1px solid #CC865E;
+}
+
+#main .login button{
+    width: 250px;
+    background-color: #CC865E;
+}
+
+#main .login button:hover{
+    background-color: white;
+    border: 1px solid #CC865E;
+    color: #CC865E;
+}
+
+#main button{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 33px;
+    color: white;
+    font-size: 18px;
+}
+
+#main .reg{
+    margin-top: 20px;
+}
+
+#main .reg button{
+    width: 220px;
+    background-color: #466BAF;
+}
+
+#main .reg button:hover {
+    background-color: white;
+    border: 1px solid #466BAF;
+    color: #466BAF;
+}

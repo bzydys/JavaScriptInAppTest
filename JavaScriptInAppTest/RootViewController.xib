@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU5-2x-jKw">
+                    <rect key="frame" x="20" y="140" width="560" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.94829531339999995" green="0.77743481410000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="jPv-f6-7pm"/>
+                    </constraints>
+                    <state key="normal" title="nativeCallJS">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nativeCallJS:" destination="-1" eventType="touchUpInside" id="WPE-zb-4GG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG8-O0-5Sj">
+                    <rect key="frame" x="20" y="80" width="560" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.94829531339999995" green="0.77743481410000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="mlf-9w-U9S"/>
+                    </constraints>
+                    <state key="normal" title="jsCallNative">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="jsCallNative:" destination="-1" eventType="touchUpInside" id="l6N-Y9-gus"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gG8-O0-5Sj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="AwX-lV-CHB"/>
+                <constraint firstItem="pU5-2x-jKw" firstAttribute="top" secondItem="gG8-O0-5Sj" secondAttribute="bottom" constant="30" id="D0G-hL-wWT"/>
+                <constraint firstAttribute="trailing" secondItem="gG8-O0-5Sj" secondAttribute="trailing" constant="20" id="fXF-Li-qM2"/>
+                <constraint firstItem="gG8-O0-5Sj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="rAp-nb-9tb"/>
+                <constraint firstItem="pU5-2x-jKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="vNF-kp-QcE"/>
+                <constraint firstAttribute="trailing" secondItem="pU5-2x-jKw" secondAttribute="trailing" constant="20" id="vdP-X1-fmz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

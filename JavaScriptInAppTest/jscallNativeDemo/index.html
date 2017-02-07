@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+  <!--最外层-->
+  <div id="main">
+      <!--面板-->
+      <div class="panel">
+          <!--账号-->
+          <div class="group">
+            <label>账号</label>
+            <input type="text" id="userName" placeholder="请输入账号">
+          </div>
+          <!--密码-->
+          <div class="group">
+              <label>密码</label>
+              <input type="password" id="psd" placeholder="请输入密码">
+          </div>
+          <!--登录-->
+          <div class="login">
+              <button onclick="native.handleLoginPsdWer(userName.value, psd.value, psd.value);">登录</button>
+          </div>
+      </div>
+      <!--注册-->
+      <div class="reg">
+          <button onclick="alert('不想注册');">创建新账号</button>
+      </div>
+  </div>
+
+</body>
+</html>
